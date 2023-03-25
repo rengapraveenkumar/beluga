@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
+    <link rel="stylesheet" href="assets\css\cozCss.css">
+    
+
+    <title>Discord Clone!</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <div class="container-fluid coz-bg-head px-5 py-3 fixed-top d-flex justify-content-between">
+        <h2 class="text-white">Discord Clone for TN-BELUGA serices</h2>
+        <span>
+            <a href="#opScreen" class="btn ml-auto text-white">OutPut</a>
+            <a href="#previewScreen" class="btn ml-auto text-white">Preview</a>
+        </span>
+    </div>
+
+    <div id="opScreen" class="opTop"></div>
+    <!-- output screen -->
+    <div class="coz-bg d-flex op">
+        <div class="row">
+            <div class="col-2">
+                <img id="output_dispaly_image" class="op-dp" style="margin-right: 50px !important;">
+            </div>
+            <div class="col-10">
+                <div class="px-5">
+                    <p class="m-0 p-0">
+                        <span class="text-white opUserName" id="opSetName">User Name</span>
+                        <span class="opDate" id="opStrDate" style="margin-left: 40px !important;">01/01/2000</span>
+                        <span class="opDate" id="opStrTime">01:00</span>
+                        <span class="opDate" id="opStrAmPm">AM</span>
+                    </p>
+                    <p id="opSetChat" class="opChat m-0 p-0">Hi..! renga....</p>
+                </div>
+            </div>
+        </div>            
+    </div>
+
+    <!-- control panel -->
+    <div class="container-fluid p-5" id="previewScreen">
+        <div class="row">
+            <div class="col-md-6 col-12 coz-right-border coz-bg">
+                <h3 class="text-white pt-3 d-flex justify-content-center">Preview</h3>
+                <div class="row p-5">
+                    <div class="col-1">
+                        <img id="preview_dispaly_image" class="coz-profile-dp" style="margin-top: 6px !important;">
+                    </div>
+                    <div class="col" style="padding-left: 25px !important;">
+                        <p class="m-0 p-0">
+                            <span class="text-white coz-user-name" id="pSetName">User Name</span>
+                            <span class="coz-date-styles" id="pStrDate" style="margin-left: 10px !important;"></span>
+                            <span class="coz-date-styles" id="pStrTime"></span>
+                            <span class="coz-date-styles" id="pStrAmPm"></span>
+                        </p>
+                        <p id="pSetChat" class="coz-chat m-0 p-0">Hi..! renga....</p>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="col-md-6 col-12 coz-left-border">
+                <!-- <input type="file" id="image_input" accpect="image/png, image/jpg" onchange="loadFile(event)" class="text-white"> -->
+                <!-- <input type="text" id="Username" placeholder="enter user name"/> -->
+                <!-- <input type="button" class="btn btn-primary" id = "tutorial" value="Load" onclick = "repeatvalue()" /> -->
+
+                <form>
+                    <h3 class="pt-3 d-flex justify-content-center">Details</h3>
+                    <div class="mb-3">
+                        <label for="getName" class="form-label">User Name</label>
+                        <input type="text" class="form-control mb-2" id="getName" placeholder="Drop User Name">
+                    </div>
+                      <div class="mb-3">
+                        <label for="userName" class="form-label">Select User Profile Image</label>
+                        <input type="file" id="image_input" accpect="image/png, image/jpg" onchange="loadFile(event)" class="form-control">
+                      </div>
+                    <label for="chat" class="form-label">Chat</label>
+                    <textarea class="form-control mb-3" id="getChat" rows="3" placeholder="Drop some Messsages"></textarea>
+                    <p id="demo"></p>
+                    <button type="button" class="btn btn-primary" onclick="repeatvalue()">Load</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+    </div>
+   
+    <script src="assets\js\cozJs.js"></script>
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets\js\bootstrap.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
